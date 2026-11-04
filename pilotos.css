@@ -1,0 +1,105 @@
+/* ==========================================================
+   pilotos.css - estilos SÓ da página de pilotos.
+   O styles.css já foi carregado antes, então aqui só
+   sobrescrevemos ou adicionamos o que é diferente.
+   ========================================================== */
+
+/* Sobrescreve o main do styles.css: aqui as seções ficam empilhadas */
+.pagina-pilotos main {
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Hero com outro degradê */
+.pagina-pilotos .hero {
+    background-image: linear-gradient(135deg, #0d0d0d, #00303a);
+}
+
+/* Link da página atual no menu */
+nav a.ativo {
+    border-bottom-color: #fff;
+}
+
+/* ===== LISTA DE PILOTOS (FLEXBOX com wrap) ===== */
+.lista-pilotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* 3 cards por linha: (100% / 3) menos a parte dos espaços (gap) */
+.piloto {
+    flex: 0 1 calc(33.333% - 17px);
+}
+
+.piloto .card-img img {
+    object-position: center top;
+}
+
+/* Cor da borda de cada piloto */
+.senna      { border-top-color: #ff8000; }
+.schumacher { border-top-color: #dc0000; }
+.hamilton   { border-top-color: #00d2be; }
+.fangio     { border-top-color: hsl(210, 70%, 60%); }
+.piquet     { border-top-color: #ffd700; }
+.verstappen { border-top-color: rgb(30, 65, 255); }
+
+/* ===== NÚMEROS (GRID de 4 colunas) ===== */
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat {
+    padding: 25px 15px;
+    text-align: center;
+    background-color: #1f1f1f;
+    border: 2px solid #e10600;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.stat strong {
+    display: block;
+    font-size: 3em;
+    color: #ff4d4d;
+}
+
+.stat span {
+    font-size: 0.85em;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+    background-color: #e10600;
+}
+
+.stat:hover strong {
+    color: #fff;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* TABLET: 2 cards por linha, números em 2 colunas */
+@media (max-width: 1024px) {
+    .piloto {
+        flex-basis: calc(50% - 13px);
+    }
+
+    .numeros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULAR: 1 card por linha, números em 1 coluna */
+@media (max-width: 600px) {
+    .piloto {
+        flex-basis: 100%;
+    }
+
+    .numeros {
+        grid-template-columns: 1fr;
+    }
+}

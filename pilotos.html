@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fórmula 1 - Grandes Pilotos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <!-- 1º: estilos base (iguais aos da página de equipes) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 2º: estilos só desta página (vêm por último, então vencem em caso de conflito) -->
+    <link rel="stylesheet" href="pilotos.css">
+</head>
+<body class="pagina-pilotos">
+
+    <!-- CABEÇALHO + MENU (com links para a outra página) -->
+    <header id="topo">
+        <h1>🏁 Fórmula 1</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#equipes">Equipes</a></li>
+                <li><a href="pilotos.html" class="ativo">Pilotos</a></li>
+                <li><a href="https://www.formula1.com" target="_blank">Site oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero">
+        <span class="selo">Hall da fama</span>
+        <h2>Lendas <em>do volante</em></h2>
+        <p>Por trás de cada carro existe um <strong>piloto</strong> capaz de levar máquina e corpo ao limite.</p>
+        <p>Conheça seis nomes que marcaram a história da Fórmula 1.</p>
+        <p><a href="index.html#equipes">← Voltar para as equipes</a></p>
+    </section>
+
+    <main>
+        <!-- CARDS DOS PILOTOS (flexbox com quebra de linha: 3 colunas x 2 linhas) -->
+        <section id="pilotos">
+            <h2 class="titulo-secao">Grandes pilotos</h2>
+
+            <div class="lista-pilotos">
+
+                <article class="card piloto senna">
+                    <span class="numero">🏆 3</span>
+                    <figure class="card-img">
+                        <img src="ayrton.webp" alt="Ayrton Senna dentro do carro da McLaren">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Ayrton Senna</h3>
+                        <p>Brasileiro, tricampeão mundial (1988, 1990 e 1991) pela McLaren. Ídolo do Brasil, é lembrado pela velocidade na classificação.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇧🇷 Brasil</p>
+                    </div>
+                </article>
+
+                <article class="card piloto schumacher">
+                    <span class="numero">🏆 7</span>
+                    <figure class="card-img">
+                        <img src="michael.jpeg" alt="Michael Schumacher com o macacão da Ferrari">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Michael Schumacher</h3>
+                        <p>Alemão, heptacampeão mundial. Conquistou dois títulos pela Benetton e cinco seguidos pela Ferrari, de 2000 a 2004.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇩🇪 Alemanha</p>
+                    </div>
+                </article>
+
+                <article class="card piloto hamilton">
+                    <span class="numero">🏆 7</span>
+                    <figure class="card-img">
+                        <img src="lewis.jpeg" alt="Lewis Hamilton ao lado do carro">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Lewis Hamilton</h3>
+                        <p>Britânico, heptacampeão mundial. Ganhou o primeiro título em 2008 pela McLaren e seis outros pela Mercedes.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇬🇧 Reino Unido</p>
+                    </div>
+                </article>
+
+                <article class="card piloto fangio">
+                    <span class="numero">🏆 5</span>
+                    <figure class="card-img">
+                        <img src="juan.jpeg" alt="Juan Manuel Fangio em um carro antigo de corrida">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Juan Manuel Fangio</h3>
+                        <p>Argentino, pentacampeão mundial na década de 1950. Foi o grande nome dos primeiros anos da categoria.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇦🇷 Argentina</p>
+                    </div>
+                </article>
+
+                <article class="card piloto piquet">
+                    <span class="numero">🏆 3</span>
+                    <figure class="card-img">
+                        <img src="piquet.jpeg" alt="Nelson Piquet no cockpit do carro">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Nelson Piquet</h3>
+                        <p>Brasileiro, tricampeão mundial em 1981, 1983 e 1987. Um dos pilotos mais vitoriosos da história do país.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇧🇷 Brasil</p>
+                    </div>
+                </article>
+
+                <article class="card piloto verstappen">
+                    <span class="numero">🏆 4</span>
+                    <figure class="card-img">
+                        <img src="max.jpeg" alt="Max Verstappen com o carro da Red Bull">
+                    </figure>
+                    <div class="card-corpo">
+                        <h3>Max Verstappen</h3>
+                        <p>Holandês da Red Bull Racing, tetracampeão mundial entre 2021 e 2024.</p>
+                        <p class="detalhe"><strong>País:</strong> 🇳🇱 Países Baixos</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NÚMEROS DOS CAMPEÕES (grid de 4 colunas) -->
+        <section id="numeros">
+            <h2 class="titulo-secao">Títulos mundiais</h2>
+
+            <div class="numeros">
+                <div class="stat">
+                    <strong>7</strong>
+                    <span>Schumacher e Hamilton</span>
+                </div>
+                <div class="stat">
+                    <strong>5</strong>
+                    <span>Fangio</span>
+                </div>
+                <div class="stat">
+                    <strong>4</strong>
+                    <span>Verstappen</span>
+                </div>
+                <div class="stat">
+                    <strong>3</strong>
+                    <span>Senna e Piquet</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Atividade de HTML e CSS. </p>
+        <p>Desenvolvido por <strong>Henrique Morita</strong> e <strong>Miguel Barrueco</strong></p>
+        <p><a href="index.html">Equipes</a> | <a href="pilotos.html">Pilotos</a></p>
+    </footer>
+
+    <a href="#topo" class="voltar-topo">↑ Topo</a>
+
+</body>
+</html>
